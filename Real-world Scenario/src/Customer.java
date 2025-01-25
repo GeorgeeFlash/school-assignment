@@ -1,7 +1,8 @@
-public class Customer {
+// Class representing a customer
+class Customer {
     String name;
 
-    Customer(String name) {
+    public Customer(String name) {
         this.name = name;
     }
 }

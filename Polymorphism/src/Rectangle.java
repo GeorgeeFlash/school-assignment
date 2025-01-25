@@ -1,4 +1,5 @@
-public class Rectangle extends Shape {
+// Subclass representing a rectangle
+class Rectangle extends Shape {
     double length, width;
 
     Rectangle(double length, double width) {
@@ -8,7 +9,7 @@ public class Rectangle extends Shape {
 
     @Override
     double calculateArea() {
-        return length * width;
+        return length * width; // Area of a rectangle formula
     }
 }
 

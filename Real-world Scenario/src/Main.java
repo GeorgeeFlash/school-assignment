@@ -1,17 +1,21 @@
 public class Main {
     public static void main(String[] args) {
+        // Create products
         Product product1 = new Product("Rice", 39000);
         Product product2 = new Product("Meat", 3000);
         Product product3 = new Product("Fish", 1500);
 
+        // Create a customer
         Customer favouriteCustomer = new Customer("Georgee Flash");
 
-        Order order = new Order();
+        // Create an order and add products
+        Order order = new Order(favouriteCustomer);
 
         order.addProduct(product1);
         order.addProduct(product2);
         order.addProduct(product3);
 
-        System.out.println(order.calculateTotal()); // 43500.0
+        // Display the order details
+        order.displayOrder();
     }
 }

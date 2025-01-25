@@ -1,4 +1,5 @@
-public class Circle extends Shape {
+// Subclass representing a circle
+class Circle extends Shape {
     double radius;
 
     Circle(double radius) {
@@ -7,6 +8,6 @@ public class Circle extends Shape {
 
     @Override
     double calculateArea() {
-        return Math.PI * radius * radius;
+        return Math.PI * radius * radius; // Area of a circle formula
     }
 }

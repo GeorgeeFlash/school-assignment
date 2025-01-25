@@ -1,4 +1,5 @@
-public class Book {
+// Class representing a Book
+class Book {
     String title, author;
 
     Book(String title, String author) {
@@ -8,6 +9,6 @@ public class Book {
 
     @Override
     public String toString() {
-        return title + " by " + author;
+        return "\"" + title + "\" by " + author;
     }
 }
